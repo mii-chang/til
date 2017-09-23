@@ -14,3 +14,4 @@ rbenv install -v [version]
 
 //バージョンアップ
 rbenv grobal [version]
+'''
