@@ -1,7 +1,7 @@
 ## はじめに
 ### Rubyのアップデート
 
-`
+```
 rbenv -version
 
 //インストールされてるrubyのバージョン確認
@@ -15,10 +15,12 @@ rbenv install -v [version]
 
 //バージョンアップ
 rbenv grobal [version]
-`
+
+```
+
 ### 基本の構造を作る
 
-`
+```
 //gemのインストール
 gem install -v [version]
 
@@ -31,4 +33,4 @@ cd workspace
 //rails new
 rails -[version] -new [appname]
 
-`
+```
