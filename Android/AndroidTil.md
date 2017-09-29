@@ -9,3 +9,9 @@ R(Red)G(Green)B(Blue)A(Alpha)のピクセルフォーマットが指定できる
   画質は確保したいけど描画速度を上げたいときに◎
 - RGBA_8888
   - RGBX_8888に透明度の情報を付け加えたもの。
+
+## ADBコマンド　　
+### アプリのDBをPCで見れるように読み取り権限のあるフォルダに移動するコマンド
+```
+adb shell run-as <パッケージ名> cat databases/＜DBファイル名＞.db | perl -pe 's/\r\n/\n/' > app.db
+```
