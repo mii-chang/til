@@ -5,3 +5,19 @@ sudo reboot
 //shutdown
 sudo shutdown -h now
 ```
+###Camera
+- raspivid  
+
+|option|省略なし|内容|
+|:--|:--|:--|
+|-?|--help|ヘルプの表示|
+|-w|--width|画像の幅の指定 (サイズ、デフォルトは 1920)|
+|-h|--height|画像の高さの指定 (サイズ、デフォルトは 1080)|
+|-b|--bitrate|ビットレイトの設定 (例. 10MBits/s は -b 10000000)|
+|-o|--output|出力ファイル名 (標準出力の場合は '-o -') |
+|-v|--verbose|詳細情報の表示。|
+|-t|--timeout|撮影時間をミリ秒単位で指定。指定しない場合は5秒。0 は無効化。|
+|-d|--demo|デモモードを実行、撮影しない。|
+|-fps|-framerate|フレーム／秒を指定|
+|-e|--penc|エンコード後にプレビュー画像を表示(圧縮の効果を表示)|
+|-g|--intra|内部リフレッシュ期間を指定 (key frame rate/GoP size)|
