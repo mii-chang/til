@@ -5,7 +5,7 @@ sudo reboot
 //shutdown
 sudo shutdown -h now
 ```
-###Camera
+### Camera
 - raspivid  
 
 |option|省略なし|内容|
