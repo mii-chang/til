@@ -1,7 +1,7 @@
-## PHP
-
-### twig
+## twig
 - PHPのテンプレートエンジン
+
+- twigの仕組み
 
 ``` twig
 {% block [blockName] %} 　<!--- HTMLのタグの名前を[blockName]に入れる -->
@@ -80,3 +80,8 @@ twigを元にして出力されたHTML
 </body>
 </html>
 ```
+- twigでのimgタグの書き方
+``` twig
+<img src="{{url('[path]')}}">
+```
+😩pathで、themeの中にimageフォルダとかを作ったときは `theme://images/hoge.png` みたいに書く
