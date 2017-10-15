@@ -5,6 +5,18 @@ sudo reboot
 //shutdown
 sudo shutdown -h now
 ```
+
+### GPIOピン
+- 電源
+  - 5V,3Vのピン
+     - それぞれの電圧の電源が取れる
+- GPIO [ピン番号]
+  - 刺したピン番号に対応する番号をプログラム上で制御できる
+- GND
+  - GROUND
+    - 接地のこと。　＝アース
+      - マイナスの線をここに繋いで電流を逃がす
+
 ### Camera
 - raspivid  
 
