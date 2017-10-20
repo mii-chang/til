@@ -24,3 +24,8 @@
     ` margin: 0 auto; `  
     - テキストのセンタリング  
     ` text-align:center; `  
+- aタグの中の文字を上下左右中心に配置
+  ```css
+  text-align: center;
+  line-height: 50px;
+  ```
