@@ -28,4 +28,7 @@
   ```css
   text-align: center;
   line-height: 50px;
-  ```
+  ```
+### flexbox
+- 中の要素をいい感じに均等に配列してくれるプロパティ　　
+` display: flex; `
