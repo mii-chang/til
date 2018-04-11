@@ -82,15 +82,24 @@ ex
 
 - findコマンド  
 - mp3を移動させる  
-`find <dir> -type f | grep -P "\.mp3$" | wargs -I{} mv {}  <mp3-dir>`
+`find <dir> -type f | grep -P "\.mp3$" | xargs -I{} mv {}  <mp3-dir>`
        
 - .git をのぞいて表示する  
 `find <dir> -name .git -prune -o -print`
-参考：http://www.roshi.tv/2011/02/find-prune.html 
+参考：http://www.roshi.tv/2011/02/find-prune.html
        
+
 - 深さ<depth>階層目までのディレクトリを表示させる  
 `find <dir> -type d -maxdepth <depth>`
        
 - 空のディレクトリを消す  
 `find -empty -delete`
+  
+- xargsコマンド
+引数を標準入力から取得して実行するコマンド  
+参考：http://wa3.i-3-i.info/word11619.html
+
+パイプ使って他のコマンドをくっつけて使う
        
+     
+                            
