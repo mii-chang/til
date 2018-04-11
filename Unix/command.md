@@ -73,9 +73,24 @@ $ cat [ファイル名] > [別ファイル名]
 $ cat [ファイル名] | wc
 $ cat wc | wc
 ```
-- echoコマンド
-print的なもの
-**使い所！**
-エディタ使わなくてもかんたんにダミーファイルができる
-ex
+- echoコマンド  
+print的なもの  
+**使い所！**  
+エディタ使わなくてもかんたんにダミーファイルができる  
+ex  
 `$ echo "hogehoge" > hoge.txt"`
+
+- findコマンド  
+- mp3を移動させる  
+`find <dir> -type f | grep -P "\.mp3$" | wargs -I{} mv {}  <mp3-dir>`
+       
+- .git をのぞいて表示する  
+`find <dir> -name .git -prune -o -print`
+参考：http://www.roshi.tv/2011/02/find-prune.html 
+       
+- 深さ<depth>階層目までのディレクトリを表示させる  
+`find <dir> -type d -maxdepth <depth>`
+       
+- 空のディレクトリを消す  
+`find -empty -delete`
+       
