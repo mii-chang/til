@@ -73,3 +73,9 @@ $ cat [ファイル名] > [別ファイル名]
 $ cat [ファイル名] | wc
 $ cat wc | wc
 ```
+- echoコマンド
+print的なもの
+**使い所！**
+エディタ使わなくてもかんたんにダミーファイルができる
+ex
+`$ echo "hogehoge" > hoge.txt"`
