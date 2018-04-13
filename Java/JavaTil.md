@@ -46,4 +46,9 @@ class Z extends Y {
 
 ## 例外
 ### try-catch
-- tryの内容を試みた結果、Errorをcatch
+- tryの内容を試みた結果、Errorをcatchした場合、catch以降の処理をして終わってね
+  　- この文が呼ばれているメソッド内でエラーの後始末をしている。
+   
+### throws
+- throwsが
+ ```
