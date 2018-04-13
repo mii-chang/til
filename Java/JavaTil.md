@@ -13,7 +13,7 @@
  
  
  ex　すべてデフォルトコンストラクタは無い  
- ```
+ ```Java
  class X {
   int x;
   
@@ -32,7 +32,7 @@ class Y extends X {
     y = b;
   }
 
-class Z extends Z {
+class Z extends Y {
   int z;
   
   //コンストラクタ
