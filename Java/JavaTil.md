@@ -43,3 +43,7 @@ class Z extends Y {
 }
   
  ```
+
+## 例外
+### try-catch
+- tryの内容を試みた結果、Errorをcatch
