@@ -138,3 +138,62 @@ public class Main {
 10
 10
 ```
+## Classに対するGenerics
+- Classに対しても同様に仮置きの型を引数にできる
+```Java
+
+public class Sub<T> {//このTが仮置きの型
+	T a;
+	T b;
+
+	Sub(T x, T y) {
+		a = x;
+		b = y;
+	}
+
+	void print() {
+		System.out.println(a);
+		System.out.println(b);
+	}
+
+	void swap() {
+		T c = null;
+
+		c = a;
+		a = b;
+		b = c;
+	}
+}
+
+```
+
+```Java
+
+public class Main {
+	public static void main(String[] args) {
+		Sub<Integer> sub1 = new Sub<Integer>(10, 20);
+		sub1.swap();
+		sub1.print();
+
+		Sub<Double> sub2 = new Sub<Double>(2.3, 4.56);
+		sub2.swap();
+		sub2.print();
+
+		Sub<String> sub3 = new Sub<String>("abc", "hello");
+		sub3.swap();
+		sub3.print();
+	}
+
+}
+
+```
+
+実行結果
+```
+20
+10
+4.56
+2.3
+hello
+abc
+```
