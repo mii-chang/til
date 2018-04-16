@@ -74,7 +74,7 @@ s = S + "gef";
 
 ```Java
 String s1 = "abc";
-String s2 = "def";
+String s2 = "abc";
 
 if(s1 == s2){
 ~~~~~~
@@ -84,7 +84,7 @@ if(s1 == s2){
 
 ```Java
 String s1 = "abc";
-String s2 = "def";
+String s2 = "abc";
 
 s1 = s1 + "def";
 s2 = s2 + "def";
