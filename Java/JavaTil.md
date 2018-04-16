@@ -68,7 +68,7 @@ class Z extends Y {
 - 文字列の連結  
 ```Java
 String s = "abc";
-s = S + "gef";
+s = Ss+ "def";
 ```
 文字列を連結すると、連結した時点で新たに連結後の内容のインスタンスが作られる！
 
