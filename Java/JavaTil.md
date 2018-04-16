@@ -57,10 +57,10 @@ class Z extends Y {
 # 文字列クラス
 オブジェクトの運用で
 
-- 値が不変(immutable) 例:Stringクラス
-  - 不変→スレッド間でロック**不要**⇛排他的制御しなくて良い
-    ↕
+- 値が不変(immutable) 例:Stringクラス  
+  - 不変→スレッド間でロック**不要**⇛排他的制御しなくて良い  
+    ↕  
 - 値が可変(mutable) 例:StringBufferクラス
 
-**関数型言語ではimmutableが大事！**
+**関数型言語ではimmutableが大事！**  
   ⇛コレクションクラス
