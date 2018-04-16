@@ -109,4 +109,32 @@ if(s1 == s2){
 
 
 # Generics  
-##
+## メソッドに対するGenerics
+- 任意の仮置きクラスを引数として受けるメソッドを定義できる。
+
+```Java
+public class Main {
+	public static void main(String[] args) {
+		int a = 10;
+		double b = 11.2;
+		swap(a,b);
+	}
+	
+	static <T> void swap(T a, T b) {//このTが仮置きの型
+		T c = null;
+		c = a;
+		a = b;
+		b = c;
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+	}
+}
+```
+
+実行結果
+```
+11.2
+10
+10
+```
