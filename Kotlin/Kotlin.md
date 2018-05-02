@@ -22,3 +22,65 @@ JavaのFinalに匹敵。
 変更可能な変数。   
 
 **基本的にvalを使おう！**
+
+
+# 関数呼び出しをかんたんにする
+
+```Kotlin
+fun main(args: Array<String>) {
+    fun <T> join(
+    collection: Collection <T>,
+    separator: String,
+    prefix: String,
+    postfix: String
+    ): String {
+        val result = StringBuilder(prefix)
+        for ((index, element) in collection.withIndex()){
+            if (index > 0) result.append(separator)
+            result.append(element)
+        }
+        result.append(postfix)
+        return result.toString()
+    }
+    
+   val list = listOf(1,2,3)
+    println(join(list, ".", "(", ")"))
+}
+```
+
+- join関数を呼び出すためには、`collection`,`separator`,`prefix`,`postfix`の4つの引数が必要！
+
+## withIndex
+- コレクションの中身をIndex番号と一緒に引っ張れる  
+  - この例では、`index`にIndex番号、`element`にコレクションの中身が入ってくる
+  
+  
+これめんどくさいな！？
+> join関数を呼び出すためには、`collection`,`separator`,`prefix`,`postfix`の4つの引数が必要！
+
+🎉省略できます🎊
+
+```Kotlin
+fun main(args: Array<String>) {
+    fun <T> join(
+    collection: Collection <T>,
+    separator: String = ",",
+    prefix: String = "(",
+    postfix: String = ")"
+    ): String {
+        val result = StringBuilder(prefix)
+        for ((index, element) in collection.withIndex()){
+            if (index > 0) result.append(separator)
+            result.append(element)
+        }
+        result.append(postfix)
+        return result.toString()
+    }
+    
+   val list = listOf(1,2,3)
+    println(join(list))
+}
+```
+
+
+` println(join(list))`でこれ以降の引数は省略されたことになる。（ただし**デフォルト引数**）
