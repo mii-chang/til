@@ -14,7 +14,7 @@ rbenv --list
 rbenv install -v [version]
 
 //バージョンアップ
-rbenv grobal [version]
+rbenv global [version]
 
 ```
 
