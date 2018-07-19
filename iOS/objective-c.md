@@ -13,3 +13,14 @@ NSLog(@"%@", _hoge);
 
 ## アンスコの意味は何じゃ  
 インスタンス変数にはアンスコつけようぜっていうお約束みたいなもの。
+
+## ブロック  
+ブロックはクロージャと同じ。  
+関数をそのまま渡せる!  
+```
+int (^oneFrom)(int);
+oneFrom = ^(int anInt) {
+return anInt - 1;
+};
+```  
+https://developer.apple.com/jp/documentation/Blocks.pdf
