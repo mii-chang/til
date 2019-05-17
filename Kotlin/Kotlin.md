@@ -50,6 +50,22 @@ fun main(args: Array<String>) {
 
 - join関数を呼び出すためには、`collection`,`separator`,`prefix`,`postfix`の4つの引数が必要！
 
+
+
+retrnしかしない関数なら更に省略可能
+例えば
+```
+fun hoge(x: Int, y: Int) {
+  return x + y
+}
+
+```
+が
+```
+fun hoge(x: Int, y: Int) = return x + y
+```
+になる！！
+
 ## withIndex
 - コレクションの中身をIndex番号と一緒に引っ張れる  
   - この例では、`index`にIndex番号、`element`にコレクションの中身が入ってくる
