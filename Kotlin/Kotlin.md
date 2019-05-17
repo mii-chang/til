@@ -62,7 +62,7 @@ fun hoge(x: Int, y: Int) {
 ```
 が
 ```
-fun hoge(x: Int, y: Int) = return x + y
+fun hoge(x: Int, y: Int) = x + y
 ```
 になる！！
 
